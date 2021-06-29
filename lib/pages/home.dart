@@ -17,11 +17,8 @@ Widget buttonBuilder(String text, BuildContext context) => Column(
       children: [
         Button(
           text: text,
-          onTap: () {
-            Navigator.of(context).push(
-              BookController.route(HEADERS_ARRAY.indexOf(text) + 1),
-            );
-          },
+          onTap: () => Navigator.of(context)
+              .push(BookController.route(CONTENTS_LIST.indexOf(text) + 1)),
         ),
         const SizedBox(height: 12),
       ],
@@ -46,12 +43,13 @@ class _HomeControllerState extends State<HomeController> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Text(
+                    // 'Contents' in English
                     'Mundarija'.toUpperCase(),
                     style: Style.headline6,
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 32),
-                  for (var text in HEADERS_ARRAY) buttonBuilder(text, context),
+                  for (var text in CONTENTS_LIST) buttonBuilder(text, context),
                 ],
               ),
             ),
