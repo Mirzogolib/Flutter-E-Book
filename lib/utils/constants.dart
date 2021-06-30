@@ -1,25 +1,27 @@
 // Here is book Content list lenght
-const CONTENTS_COUNT = 19;
+const CONTENTS_COUNT = 9;
 
 // Here is book Content list
 const List<String> CONTENTS_LIST = [
-  "Kirish",
-  "Jismoniy tarbiya va sport pedagogikasining umumiy asoslari",
-  "Shaxs shakllanishida jismoniy tarbiya va sportning ahamiyati",
-  "Jismoniy tarbiya va sport mutaxassislari faoliyatining pedagogik jihatlari",
-  "Jismoniy tarbiya va sport sohasida ta’lim tamoyillari",
-  "Jismoniy tarbiya va sport sohasida qo‘llaniladigan ta’lim metodlari",
-  "Tarbiya mazmuni va uning jismoniy tarbiya va sportdagi ahamiyati",
-  "Jismoniy tarbiya va sport sohasida qo‘llaniladigan tarbiya metodlari",
-  "Jismoniy tarbiya va sport ta’limini loyihalashtirish va boshqarish",
-  "Jismoniy tarbiya va sport sohasida boshqaruv uslublari",
-  "Shaxsni tarbiyalash va shakllanishiga sport jamoasining ta’siri",
-  "Sport sohasidagi kreativlik(ijodkorlik)",
-  "Jismoniy tarbiya va sport sohasida samarali pedagogik faoliyatning asosiy omil va shartlari",
-  "Sportda huquqiy ta’lim",
-  "Sport mashg‘ulotlarida pedagogik tamoyillar qonuniyati",
-  "Jismoniy tarbiya va sportni tashkil etish",
-  "Yosh davrlarda jismoniy tarbiyasi va uning roli",
-  "Fan bo‘yicha izohli lug‘at",
-  "Foydalanilgan adabiyotlar ro‘yxati"
+  "Кириш",
+  "Психодиагностика ва унинг ривожланиш тарихи",
+  "Шахс ва мотивация психодиагностикаси",
+  "Психик жараёнлар ва шахслараро муносабат психодиагностикаси",
+  "Психокоррекцияга кириш",
+  "Психокоррекция амалиётида қўлланилувчи асосий йўналишлар",
+  "Психик ҳолатлар психокоррекцияси",
+  "Глоссарий",
+  "Фойдаланилган адабиётлар рўйхати",
 ];
+
+//Here is book name
+const String BOOK_NAME = "Спорт психодиагностикаси ва психокоррекция";
+
+//Here is book writers
+const String BOOK_WRITERS = "ХАИТОВ А.У.";
+
+//Here is book writers
+const String CONTENTS_HEADER = "Мундарижа";
+
+//Here is book writers
+const String THANK_YOU = "Эътиборингиз учун ташаккур!";

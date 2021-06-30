@@ -1,4 +1,4 @@
-package com.example.sport_pedagogikasi
+package com.example.sport_psixadiagnostikasi
 
 import io.flutter.embedding.android.FlutterActivity
 

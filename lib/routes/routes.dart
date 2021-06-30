@@ -1,6 +1,6 @@
 import 'package:fluro/fluro.dart';
-import 'package:sport_pedagogikasi/pages/book.dart';
-import 'package:sport_pedagogikasi/pages/home.dart';
+import 'package:sport_psixadiagnostikasi/pages/book.dart';
+import 'package:sport_psixadiagnostikasi/pages/home.dart';
 
 class Application {
   static FluroRouter router;

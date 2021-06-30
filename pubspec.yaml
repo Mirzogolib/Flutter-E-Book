@@ -1,4 +1,4 @@
-name: sport_pedagogikasi
+name: sport_psixadiagnostikasi
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -45,25 +45,15 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/part1.pdf
-    - assets/part2.pdf
-    - assets/part3.pdf
-    - assets/part4.pdf
-    - assets/part5.pdf
-    - assets/part6.pdf
-    - assets/part7.pdf
-    - assets/part8.pdf
-    - assets/part9.pdf
-    - assets/part10.pdf
-    - assets/part11.pdf
-    - assets/part12.pdf
-    - assets/part13.pdf
-    - assets/part14.pdf
-    - assets/part15.pdf
-    - assets/part16.pdf
-    - assets/part17.pdf
-    - assets/part18.pdf
-    - assets/part19.pdf
+    - assets/docs/part1.pdf
+    - assets/docs/part2.pdf
+    - assets/docs/part3.pdf
+    - assets/docs/part4.pdf
+    - assets/docs/part5.pdf
+    - assets/docs/part6.pdf
+    - assets/docs/part7.pdf
+    - assets/docs/part8.pdf
+    - assets/docs/part9.pdf
     - assets/images/album.png
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

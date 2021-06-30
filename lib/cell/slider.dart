@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:sport_pedagogikasi/theme/style.dart';
+import 'package:sport_psixadiagnostikasi/theme/style.dart';
+import 'package:sport_psixadiagnostikasi/utils/constants.dart';
 
 class ImageSliderCell extends StatefulWidget {
   // final Media images;
@@ -23,12 +24,12 @@ class _ImageSliderCellState extends State<ImageSliderCell> {
           ),
           const SizedBox(height: 32),
           Text(
-            'Jismoniy tarbiya va sport pedagogikasi',
+            BOOK_NAME,
             textAlign: TextAlign.center,
             style: Style.headline5.copyWith(color: Style.colors.white),
           ),
           const SizedBox(height: 16),
-          Text('SH.SH. Usmanova D.M. Yoqubova',
+          Text(BOOK_WRITERS,
               style: Style.body1.copyWith(color: Style.colors.white)),
         ]),
       );

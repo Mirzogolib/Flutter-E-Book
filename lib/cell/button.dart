@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:sport_pedagogikasi/theme/style.dart';
+import 'package:sport_psixadiagnostikasi/theme/style.dart';
 
 class Button extends StatelessWidget {
   final String text;
   final Function onTap;
+  final Color color;
+  final IconData icon;
   const Button({
     this.text,
     this.onTap,
+    this.color,
+    this.icon,
     Key key,
   }) : super(key: key);
 
@@ -18,15 +22,31 @@ class Button extends StatelessWidget {
       highlightElevation: 0,
       height: 48,
       padding: Style.padding12,
-      color: Style.colors.primary,
+      color: color == null ? Style.colors.primary : color,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),
-      child: Text(
-        text,
-        textAlign: TextAlign.center,
-        style: Style.button.copyWith(color: Style.colors.white),
-      ),
+      child: icon == null
+          ? Text(
+              text,
+              textAlign: TextAlign.center,
+              style: Style.button.copyWith(color: Style.colors.white),
+            )
+          : Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  icon,
+                  color: Style.colors.white,
+                ),
+                const SizedBox(width: 16),
+                Text(
+                  text,
+                  textAlign: TextAlign.center,
+                  style: Style.button.copyWith(color: Style.colors.white),
+                )
+              ],
+            ),
     );
   }
 }
