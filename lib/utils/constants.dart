@@ -1,5 +1,8 @@
-const HEADER_COUNT = 19;
-const List<String> HEADERS_ARRAY = [
+// Here is book Content list lenght
+const CONTENTS_COUNT = 19;
+
+// Here is book Content list
+const List<String> CONTENTS_LIST = [
   "Kirish",
   "Jismoniy tarbiya va sport pedagogikasining umumiy asoslari",
   "Shaxs shakllanishida jismoniy tarbiya va sportning ahamiyati",
