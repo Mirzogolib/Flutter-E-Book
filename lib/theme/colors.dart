@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 
 class AppColors {
   final Color transparent = const Color(0x00000000);
-  final Color primary = const Color(0xffc05299);
+  final Color primary = const Color(0xff157a6e);
   final Color background = const Color(0xfff0f5f9);
   final Color white = const Color(0xffffffff);
   final Color black = const Color(0xff222222);
@@ -14,7 +14,7 @@ class AppColors {
   final Color error = const Color(0xfffe4242);
   final Color shadow = const Color(0x45000000);
   final Color green = const Color(0xff2bbd1f);
-  final Color blue = const Color(0xff00a3ff);
+  final Color blue = const Color(0xff459ad8);
   final Color grey2 = const Color(0xff4f4f4f);
   final Color yellow = const Color(0xffffbe0b);
   final Color violet = const Color(0xff673ab7);

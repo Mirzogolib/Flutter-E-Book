@@ -1,7 +1,8 @@
 import 'package:advance_pdf_viewer/advance_pdf_viewer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sport_pedagogikasi/theme/style.dart';
+import 'package:sport_psixadiagnostikasi/theme/style.dart';
+import 'package:sport_psixadiagnostikasi/utils/constants.dart';
 
 class BookController extends StatefulWidget {
   final int type;
@@ -27,7 +28,8 @@ class _BookControllerState extends State<BookController> {
   }
 
   loadDocument() async {
-    document = await PDFDocument.fromAsset('assets/part${widget.type}.pdf');
+    document =
+        await PDFDocument.fromAsset('assets/docs/part${widget.type}.pdf');
     setState(() => _isLoading = false);
   }
 
@@ -35,7 +37,7 @@ class _BookControllerState extends State<BookController> {
         border: null,
         backgroundColor: Style.colors.white,
         middle: Text(
-          'Jismoniy tarbiya va sport pedagogikasi',
+          BOOK_NAME,
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),

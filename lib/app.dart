@@ -1,9 +1,9 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sport_pedagogikasi/pages/home.dart';
-import 'package:sport_pedagogikasi/routes/routes.dart';
-import 'package:sport_pedagogikasi/theme/theme.dart';
+import 'package:sport_psixadiagnostikasi/pages/home.dart';
+import 'package:sport_psixadiagnostikasi/routes/routes.dart';
+import 'package:sport_psixadiagnostikasi/theme/theme.dart';
 
 class MyApp extends StatefulWidget {
   @override
