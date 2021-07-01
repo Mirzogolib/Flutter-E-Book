@@ -1,8 +1,8 @@
 import 'package:advance_pdf_viewer/advance_pdf_viewer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sport_psixadiagnostikasi/theme/style.dart';
-import 'package:sport_psixadiagnostikasi/utils/constants.dart';
+import 'package:volleyball/theme/style.dart';
+import 'package:volleyball/utils/constants.dart';
 
 class BookController extends StatefulWidget {
   final int pageNumber;

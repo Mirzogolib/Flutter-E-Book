@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:sport_psixadiagnostikasi/theme/style.dart';
-import 'package:sport_psixadiagnostikasi/utils/constants.dart';
+import 'package:volleyball/theme/style.dart';
+import 'package:volleyball/utils/constants.dart';
 
 class ImageSliderCell extends StatefulWidget {
   // final Media images;

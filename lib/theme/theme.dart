@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sport_psixadiagnostikasi/theme/style.dart';
+import 'package:volleyball/theme/style.dart';
 
 final theme = ThemeData(
   brightness: Style.appBrightness,

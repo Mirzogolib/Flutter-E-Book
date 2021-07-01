@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sport_psixadiagnostikasi/cell/button.dart';
-import 'package:sport_psixadiagnostikasi/cell/slider.dart';
-import 'package:sport_psixadiagnostikasi/pages/book.dart';
-import 'package:sport_psixadiagnostikasi/theme/style.dart';
-import 'package:sport_psixadiagnostikasi/utils/constants.dart';
+import 'package:volleyball/cell/button.dart';
+import 'package:volleyball/cell/slider.dart';
+import 'package:volleyball/pages/book.dart';
+import 'package:volleyball/theme/style.dart';
+import 'package:volleyball/utils/constants.dart';
 
 class HomeController extends StatefulWidget {
   HomeController({Key key}) : super(key: key);
@@ -51,13 +51,6 @@ class _HomeControllerState extends State<HomeController> {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 32),
-                  // for (var text in CONTENTS_LIST) buttonBuilder(text, context),
-                  // CONTENTS_LIST_MAP.forEach((key, value) {
-                  //   buttonBuilder(value, context);
-                  // }),
-                  // CONTENTS_LIST_MAP.entries.forEach((element) {
-                  //   buttonBuilder(element.value, context);
-                  // }),
                   for (var element in CONTENTS_LIST_MAP.entries)
                     buttonBuilder(element, context),
                 ],
