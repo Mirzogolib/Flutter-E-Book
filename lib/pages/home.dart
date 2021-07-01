@@ -12,13 +12,14 @@ class HomeController extends StatefulWidget {
   _HomeControllerState createState() => _HomeControllerState();
 }
 
-Widget buttonBuilder(String text, BuildContext context) => Column(
+Widget buttonBuilder(MapEntry<int, String> element, BuildContext context) =>
+    Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Button(
-          text: text,
-          onTap: () => Navigator.of(context)
-              .push(BookController.route(CONTENTS_LIST.indexOf(text) + 1)),
+          text: element.value,
+          onTap: () =>
+              Navigator.of(context).push(BookController.route(element.key)),
         ),
         const SizedBox(height: 16),
       ],
@@ -50,7 +51,15 @@ class _HomeControllerState extends State<HomeController> {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 32),
-                  for (var text in CONTENTS_LIST) buttonBuilder(text, context),
+                  // for (var text in CONTENTS_LIST) buttonBuilder(text, context),
+                  // CONTENTS_LIST_MAP.forEach((key, value) {
+                  //   buttonBuilder(value, context);
+                  // }),
+                  // CONTENTS_LIST_MAP.entries.forEach((element) {
+                  //   buttonBuilder(element.value, context);
+                  // }),
+                  for (var element in CONTENTS_LIST_MAP.entries)
+                    buttonBuilder(element, context),
                 ],
               ),
             ),

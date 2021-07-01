@@ -5,13 +5,14 @@ import 'package:sport_psixadiagnostikasi/theme/style.dart';
 import 'package:sport_psixadiagnostikasi/utils/constants.dart';
 
 class BookController extends StatefulWidget {
-  final int type;
-  BookController(this.type, {Key key}) : super(key: key);
+  final int pageNumber;
+  BookController(this.pageNumber, {Key key}) : super(key: key);
 
-  static Widget controllerWithProvider(int id) => BookController(id);
+  static Widget controllerWithProvider(int pageNumber) =>
+      BookController(pageNumber);
 
-  static Route route(int id) => CupertinoPageRoute(
-        builder: (_) => controllerWithProvider(id),
+  static Route route(int pageNumber) => CupertinoPageRoute(
+        builder: (_) => controllerWithProvider(pageNumber),
       );
 
   @override
@@ -28,8 +29,7 @@ class _BookControllerState extends State<BookController> {
   }
 
   loadDocument() async {
-    document =
-        await PDFDocument.fromAsset('assets/docs/part${widget.type}.pdf');
+    document = await PDFDocument.fromAsset('assets/docs/book.pdf');
     setState(() => _isLoading = false);
   }
 
@@ -63,7 +63,8 @@ class _BookControllerState extends State<BookController> {
             : PDFViewer(
                 document: document,
                 zoomSteps: 1,
-                tooltip: PDFViewerTooltip(pick: 'Sahifani tanlang'),
+                tooltip: PDFViewerTooltip(pick: PICK_PAGE),
+                controller: PageController(initialPage: widget.pageNumber),
               ),
       ),
     );

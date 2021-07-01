@@ -14,14 +14,20 @@ const List<String> CONTENTS_LIST = [
   "Фойдаланилган адабиётлар рўйхати",
 ];
 
+const Map<int, String> CONTENTS_LIST_MAP = {
+  1: "asdsad",
+  2: "dsfsddsd",
+  5: "jhgf",
+};
+
 //Here is book name
 const String BOOK_NAME = "Спорт психодиагностикаси ва психокоррекция";
 
 //Here is book writers
 const String BOOK_WRITERS = "ХАИТОВ А.У.";
 
-//Here is book writers
 const String CONTENTS_HEADER = "Мундарижа";
 
-//Here is book writers
 const String THANK_YOU = "Эътиборингиз учун ташаккур!";
+
+const String PICK_PAGE = 'Sahifani tanlang';
