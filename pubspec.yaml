@@ -1,4 +1,4 @@
-name: sport_psixadiagnostikasi
+name: volleyball
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -45,15 +45,7 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/docs/part1.pdf
-    - assets/docs/part2.pdf
-    - assets/docs/part3.pdf
-    - assets/docs/part4.pdf
-    - assets/docs/part5.pdf
-    - assets/docs/part6.pdf
-    - assets/docs/part7.pdf
-    - assets/docs/part8.pdf
-    - assets/docs/part9.pdf
+    - assets/docs/book.pdf
     - assets/images/album.png
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

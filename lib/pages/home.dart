@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sport_psixadiagnostikasi/cell/button.dart';
-import 'package:sport_psixadiagnostikasi/cell/slider.dart';
-import 'package:sport_psixadiagnostikasi/pages/book.dart';
-import 'package:sport_psixadiagnostikasi/theme/style.dart';
-import 'package:sport_psixadiagnostikasi/utils/constants.dart';
+import 'package:volleyball/cell/button.dart';
+import 'package:volleyball/cell/slider.dart';
+import 'package:volleyball/pages/book.dart';
+import 'package:volleyball/theme/style.dart';
+import 'package:volleyball/utils/constants.dart';
 
 class HomeController extends StatefulWidget {
   HomeController({Key key}) : super(key: key);
@@ -12,13 +12,14 @@ class HomeController extends StatefulWidget {
   _HomeControllerState createState() => _HomeControllerState();
 }
 
-Widget buttonBuilder(String text, BuildContext context) => Column(
+Widget buttonBuilder(MapEntry<int, String> element, BuildContext context) =>
+    Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Button(
-          text: text,
-          onTap: () => Navigator.of(context)
-              .push(BookController.route(CONTENTS_LIST.indexOf(text) + 1)),
+          text: element.value,
+          onTap: () =>
+              Navigator.of(context).push(BookController.route(element.key)),
         ),
         const SizedBox(height: 16),
       ],
@@ -50,7 +51,8 @@ class _HomeControllerState extends State<HomeController> {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 32),
-                  for (var text in CONTENTS_LIST) buttonBuilder(text, context),
+                  for (var element in CONTENTS_LIST_MAP.entries)
+                    buttonBuilder(element, context),
                 ],
               ),
             ),
