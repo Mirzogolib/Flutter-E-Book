@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:volleyball/cell/button.dart';
-import 'package:volleyball/cell/slider.dart';
-import 'package:volleyball/pages/book.dart';
-import 'package:volleyball/theme/style.dart';
-import 'package:volleyball/utils/constants.dart';
+import 'package:sport_psixologiyasi_/cell/button.dart';
+import 'package:sport_psixologiyasi_/cell/slider.dart';
+import 'package:sport_psixologiyasi_/pages/book.dart';
+import 'package:sport_psixologiyasi_/theme/style.dart';
+import 'package:sport_psixologiyasi_/utils/constants.dart';
 
 class HomeController extends StatefulWidget {
   HomeController({Key key}) : super(key: key);

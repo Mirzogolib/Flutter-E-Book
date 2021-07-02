@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 
 class AppColors {
   final Color transparent = const Color(0x00000000);
-  final Color primary = const Color(0xff3c4f53);
+  final Color primary = const Color(0xff277da1);
   final Color background = const Color(0xfff0f5f9);
   final Color white = const Color(0xffffffff);
   final Color black = const Color(0xff222222);
