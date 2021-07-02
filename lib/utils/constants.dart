@@ -4,48 +4,24 @@
 const Map<int, String> CONTENTS_LIST_MAP = {
   //ex: actual page number is 3
   //(3=2+1 => 3-> actual page number, 2-> number in map, 1 -> unit added to overcome 0)
-  2: "Введение",
-  5: "Введение в предмет",
-  14: "Многогранные педагогические функции преподавателя - тренера",
-  34: "Возникновение волейбола, его развитие в Мире и Узбекистане",
-  69: "Основы техники игры",
-  107: "Основы тактики игры",
-  131: "Обучение техники игры",
-  197: "Обучение тактики игры",
-  214: "Методика развития общих и специальных физических качеств",
-  245: "Правила соревнований, судьи и методика судейства",
-  285: "Методика проведения отбора в спортивные школы",
-  293: "Группы спортивной подготовки и планирование процесса подготовки",
-  300: "Виды подготовки и их реализация",
-  361:
-      "Методика проведения занятий по волейболу в образовательных учреждениях и спортивных школах",
-  386:
-      "Нагрузки - утомление, методика его устранения и повышения работоспособности",
-  393: "Тактика и стратегия в современном волейболе",
-  405: "Периодизация и цикличность многолетнего процесса спортивной тренировки",
-  414:
-      "Методика проведения тренировочных занятий с волейболистами высших разрядов",
-  439: "Педагогический контроль и управление процессом подготовки",
-  449:
-      "Положение о соревнованиях и организационно-методические вопросы их проведения",
-  475: "Научно – исследовательская работа студентов",
-  480: "Подготовка команды к соревнованиям и управление её деятельностью",
-  486:
-      "Государственные и общественные органы управления развитием волейбола в Узбекистане",
-  496: "Приложения и Схемы",
-  504: "Жестикуляция судей",
-  512: "Таблицы",
-  542: "Глоссарий",
+  2: "Kirish",
+  4: "Sport psixologiyasining predmeti, vazifalari va rivojlanishi",
+  28: "Sport psixologiyasining tadqiqot usullari",
+  126: "Sport faoliyatining psixologik tavsifi",
+  155: "Sport musobaqalari psixologiyasi",
+  177: "Sportda shaxs psixologiyasi",
+  214: "Sport treneri shaxsi va faoliyatining psixologik tavsifi",
+  241: "Glossariy",
 };
 
 //Here is book name
-const String BOOK_NAME = "Теория и методика волейбола";
+const String BOOK_NAME = "Sport psixologiyasi";
 
 //Here is book writers
-const String BOOK_WRITERS = "Ашуркова С.Ф.";
+const String BOOK_WRITERS = "Ishtayev Javlon Mavlonboyevich";
 
-const String CONTENTS_HEADER = "Содержание";
+const String CONTENTS_HEADER = "Mundarija";
 
-const String THANK_YOU = "Спасибо за внимание!";
+const String THANK_YOU = "E'tiboringiz uchun tashakkur!";
 
-const String PICK_PAGE = 'Выберите страницу';
+const String PICK_PAGE = 'Sahifani tanlang';

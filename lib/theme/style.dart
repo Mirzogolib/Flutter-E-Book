@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:volleyball/theme/colors.dart';
+import 'package:sport_psixologiyasi_/theme/colors.dart';
 
 class Style {
   /// Application Colors
